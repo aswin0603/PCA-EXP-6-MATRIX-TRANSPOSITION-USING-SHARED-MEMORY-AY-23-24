@@ -401,7 +401,6 @@ CHECK(cudaMemset(d_C, 0, nBytes));
     CHECK(cudaDeviceReset());
     return EXIT_SUCCESS;
 }
-
 ```
 ```cuda
 !nvcc -arch=sm_75 mattranpose.cu -o mattran
@@ -410,7 +409,9 @@ CHECK(cudaMemset(d_C, 0, nBytes));
 ```
 
 ## OUTPUT:
-SHOW YOUR OUTPUT HERE
+<img width="1303" height="239" alt="image" src="https://github.com/user-attachments/assets/3c324a72-b12f-4c17-9122-9e6c1284a8ed" />
+<img width="1309" height="658" alt="image" src="https://github.com/user-attachments/assets/b92d6ba7-622c-4de8-b779-2a4ed4646e9e" />
+<img width="1305" height="447" alt="image" src="https://github.com/user-attachments/assets/44e02005-ce44-4595-95a6-f3328ae34dd0" />
 
 ## RESULT:
-Thus the program has been executed by using CUDA to transpose a matrix. It is observed that there are variations shared memory and global memory implementation. The elapsed times are recorded as _______________.
+Thus the program has been executed by using CUDA to transpose a matrix. It is observed that there are variations shared memory and global memory implementation. The elapsed times are recorded as 0.005894 seconds and 0.004090 seconds.
